@@ -4,8 +4,6 @@ defmodule Test do
   use ExUnit.Case, async: false
   import TestHelper
 
-  @test_file "#{__DIR__}/test_file"
-
   test_script "calculator" do
     pid = Calculator.start()
     Calculator.add(pid, 4)
